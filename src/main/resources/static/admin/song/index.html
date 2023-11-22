@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="icon" href="../img/core-img/favicon.ico">
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/0ec45a6e18.css"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous" />
+        <script
+            src="https://kit.fontawesome.com/0ec45a6e18.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        body {
+            background: black;
+        }
+        .bg-header {
+            background: #171717;
+        }
+    </style>
+    <body>
+        <div
+            class="container-fluid"
+            style="font-family: Montserrat, sans-serif">
+             <!-- HEADER Ở ĐÂY -->
+             <div class="row">
+                <!-- MENUSIDE Ở ĐÂY -->
+                <main role="main" class="col-md-10 px-4">
+                    <!-- //body -->
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-md-12">
+                            <h3
+                                class="mb-2"
+                                style="font-weight: bold; color: white">
+                                <i class="fa-solid fa-music"></i>&nbsp;&nbsp;
+                                Songs Management
+                            </h3>
+                            <a href="editor.html"
+                                ><button
+                                    style="
+                                        background-color: aqua;
+                                        font-weight: bold;
+                                    "
+                                    class="btn mb-3 col-md-2">
+                                    Add song
+                                </button></a
+                            >
+                        </div>
+                        <table
+                            style="border-radius: 10px; margin-left: 12px"
+                            class="table table-bordered table-hover table-responsive table-dark col-md-11">
+                            <thead>
+                                <tr>
+                                    <th>Num</th>
+                                    <th>Thumbnail</th>
+                                    <th>Name</th>
+                                    <th>Audio</th>
+                                    <th>Artist</th>
+                                    <th>Category</th>
+                                    <th style="width: 50px"></th>
+                                    <th style="width: 50px"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="list-songs-admin">
+                                <!-- render -->
+
+                                <tr>
+                                    <th class="text-center">1</th>
+                                    <td>
+                                        <img
+                                            src="../../asset/img/image 10.png"
+                                            style="height: 100px" />
+                                    </td>
+                                    <td>Limbo</td>
+                                    <td>limbo.mp3</td>
+                                    <td>Keshi</td>
+                                    <td>Gabriel</td>
+                                    <td>POP</td>
+
+                                    <td style="width: 50px">
+                                        <a href="editor.html"
+                                            ><button class="btn btn-light">
+                                                Edit
+                                            </button></a
+                                        >
+                                    </td>
+                                    <td style="width: 50px">
+                                        <button class="btn btn-secondary">
+                                            Del
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- render -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- //body -->
+
+                    <div class="container col-12" style="height: 500px"></div>
+
+                    <script
+                        src="https://code.jquery.com/jquery-3.6.1.min.js"
+                        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+                        crossorigin="anonymous"></script>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                    <script src="../../js/script.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                </main>
+            </div>
+        </div>
+        <script src="../../js/admin-song.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </body>
+</html>
