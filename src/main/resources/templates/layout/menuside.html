@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Player</title>
+        <link rel="stylesheet" href="/css/styleplayer.css" />
+        
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/favicon.ico">
+        <!-- icon from font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- icon from font-awesome -->
+        <!-- FONT -->
+        <!-- POPPINS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Marcellus&family=Montserrat:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <!-- PROMP -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Marcellus&family=Montserrat:wght@400;500;700&family=Prompt:wght@400;700&display=swap"
+            rel="stylesheet" />
+        <!-- FONT -->
+    </head>
+    <div class="menu-side" th:fragment="menu-side">
+        <div class="account-section">
+            <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+        </div>
+        <div class="web-nav">
+            <p class="active">
+                <span></span><a href="home/index"><i class="bi bi-music-note-beamed"></i> Home</a>
+            </p>
+            <p>
+                <span></span><a href="home/explore"><i class="bi bi-music-note-beamed"></i> Explore</a>
+            </p>
+            <p>
+                <span></span><a href="#"><i class="bi bi-music-note-beamed"></i> Videos</a>
+            </p>
+        </div>
+        <div class="my-collection">
+            <p class="my-collection-tilte">MY COLLECTION</p>
+            <p>
+                <span></span><i class="fa-solid fa-podcast"></i> Mixes &
+                Radio
+            </p>
+            <p>
+                <span></span><i class="fa-solid fa-sliders"></i> Playlists
+            </p>
+            <p>
+                <span></span><i class="fa-solid fa-compact-disc"></i> Albums
+            </p>
+            <p><span></span><i class="fa-solid fa-music"></i> Tracks</p>
+            <p>
+                <span></span><i class="fa-brands fa-youtube"></i> Videos
+            </p>
+            <p>
+                <span></span><i class="fa-solid fa-microphone"></i> Artists
+            </p>
+        </div>
+        <div class="create-playlist">
+            <p class="create-playlist-title">
+                PLAYLISTS
+            </p>
+            <div class="create-playlist-a">
+                <a href="#" onclick="openModal()">
+                    <span></span>
+                    <i class="fa-solid fa-circle-plus"></i>
+                    Create...
+                </a>
+            </div>
+            <div class="log-out-a">
+                <hr style="border-color: #595959; /* Màu đường kẻ */">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Log Out
+                </a>
+            </div>
+            
+
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal" id="playlistModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Create Playlist</h2>
+                <input type="text" id="name-playlist" placeholder="Enter playlist name" />
+                <button id="submit-playlist">Create</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <!-- Modal Update -->
+        <div class="modal-update" id="playlistUpdateModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalUpdate()">&times;</span>
+                <h2>Update Playlist</h2>
+                <input type="text" id="name-playlist-update" placeholder="Enter playlist name" />
+                <button id="update-playlist">Save</button>
+            </div>
+        </div>
+        <!-- Modal Update -->
+        <!-- Modal Add Song-->
+        <div class="modal" id="addToPlaylistModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddToPlaylistModal()">&times;</span>
+                <h2>Add to Playlist</h2>
+            </div>
+        </div>
+        <!-- Modal Add Song-->
+    </div>
