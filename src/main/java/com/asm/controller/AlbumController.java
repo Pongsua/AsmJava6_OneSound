@@ -10,7 +10,7 @@ public class AlbumController {
 	public String index() {
 		return "/admin/album/index.html";
 	}
-	
+
 	@RequestMapping("/album/edit")
 	public String edit() {
 		return "admin/album/editor";
